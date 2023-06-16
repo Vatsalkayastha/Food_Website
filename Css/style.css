@@ -1,0 +1,252 @@
+/* Css Reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Css Variables */
+:root{
+    --navbar-height: 49px;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    font-family: 'Baloo Bhai', cursive;
+    /* width: 100%; */
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
+/* Navigation Bar: Logo And Image */
+
+#logo{
+    margin: 0px 13px;
+}
+
+#logo img{
+    height: 75px;
+    width: 75px;
+    margin: 4px 13px;
+
+}   
+
+/* Navigation Bar: List */
+
+#navbar ul{
+    display: flex;
+
+}
+
+#navbar ul li{      
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column  ;
+    padding: 3px 200px;
+    height: 442px;;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../img/bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    height: 80%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.92;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services Section */
+.services-container{
+    margin: 30px 2px;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 37px 17px;
+    margin: 8px;
+    border-radius: 32px;
+    background-color: #f3e6e696;
+    box-shadow: 2px 2px 8px #292626;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family:'Bree Serif', serif;
+}
+
+/* Clients Section */
+
+#about{
+    height: 360px;
+    margin: 3px 2px;
+}
+
+#about::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+    opacity: 0.25;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 140px;
+}
+.clients-items{
+    padding: 34px 50px;
+}
+
+/* Contact Section */
+
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/contact.jpg') no-repeat center center/cover ;
+    
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#contact-box input, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+
+/* Utility Clases */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 1.9rem;
+    padding: 12px;   
+    font-family: 'Bree Serif', serif;   
+}
+
+.btn{
+    border-radius: 22px;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #b04040;
+    color: whitesmoke;
+    margin: 17px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border-radius: 22px;
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: #b040408a;
+    color: whitesmoke;
+    margin: 17px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
